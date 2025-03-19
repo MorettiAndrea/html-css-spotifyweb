@@ -1,3 +1,8 @@
+:root {
+  --media-player-height: 90px;
+  --left-bar-width: 100px;
+}
+
 /* setup generali */
 * {
   margin: 0;
@@ -34,6 +39,17 @@ ul {
   padding-right: 0.5rem;
 }
 
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-color: #141922;
+  color: white;
+}
+
 /* row-columns */
 
 .row {
@@ -58,3 +74,32 @@ ul {
 }
 
 /* fine row-columns */
+
+/* responsive */
+
+/* da 0 a 551px */
+
+/* main content */
+.main-content {
+  display: flex;
+  height: calc(100vh - 90px);
+}
+
+.movies-table {
+  width: calc(100vh - var(--left-bar-width));
+}
+
+.left-bar {
+  width: var(--left-bar-width);
+}
+
+.media-player {
+  height: var(--media-player-height);
+  background-color: #282828;
+}
+
+/* da 552px a 638px */
+
+/* da 639px a 877px */
+
+/* da 878px a 1439px */
