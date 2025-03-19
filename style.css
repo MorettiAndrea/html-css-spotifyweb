@@ -1,6 +1,7 @@
 :root {
   --media-player-height: 90px;
   --left-bar-width: 100px;
+  --call-to-action-height: 90px;
 }
 
 /* setup generali */
@@ -45,9 +46,8 @@ ul {
   overflow: hidden;
 }
 
-body {
-  background-color: #141922;
-  color: white;
+.hide {
+  display: none;
 }
 
 /* row-columns */
@@ -79,19 +79,48 @@ body {
 
 /* da 0 a 551px */
 
-/* main content */
-.main-content {
-  display: flex;
-  height: calc(100vh - 90px);
+body {
+  background-color: #141922;
+  color: white;
 }
+
+/* top content */
+
+.top-content {
+  display: flex;
+  height: calc(100vh - var(--media-player-height));
+}
+
+/* main content */
 
 .movies-table {
   width: calc(100vh - var(--left-bar-width));
+  overflow: auto;
 }
+
+.call-to-action {
+  height: var(--call-to-action-height);
+  background-color: azure;
+}
+.main-content {
+  height: calc(100vh - var(--call-to-action-height));
+}
+
+/*left-bar */
 
 .left-bar {
   width: var(--left-bar-width);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
 }
+
+.icons {
+  max-width: 80%;
+  padding-left: 10px;
+}
+
+/* fine main content */
 
 .media-player {
   height: var(--media-player-height);
