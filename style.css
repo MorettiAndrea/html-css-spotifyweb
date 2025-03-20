@@ -233,6 +233,11 @@ body {
   padding-left: 20px;
 }
 
+.player-icons > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ##### da 639px a 877px ##### */
 
 @media screen and (min-width: 639px) {
@@ -273,4 +278,4 @@ body {
   }
 }
 
-/* da 878px a 1439px */
+/* ####da 878px a 1439px#### */
