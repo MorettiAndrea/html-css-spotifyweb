@@ -274,7 +274,6 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: grey;
-  border-radius: 5px;
   padding-right: 20px;
 }
 
@@ -310,8 +309,6 @@ body {
   background-color: chartreuse;
 }
 
-.filled-bar::after {
-}
 .timer-check {
   height: 20px;
   width: 20px;
@@ -321,6 +318,49 @@ body {
   bottom: -9px;
   left: 37px;
   display: none;
+}
+
+.volume {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+
+.volume-bar {
+  width: 50px;
+  height: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding-right: 20px;
+}
+
+.filled-volume {
+  height: 100%;
+  width: 15px;
+  background-color: white;
+  position: relative;
+}
+
+.volume-check {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3px;
+  left: 10px;
+  display: none;
+}
+
+.filled-volume:hover .volume-check {
+  display: block;
+}
+
+.filled-volume:hover {
+  background-color: chartreuse;
 }
 
 /* ##### da 639px a 877px ##### */
@@ -335,7 +375,7 @@ body {
 
   /* top-content s */
 
-  /* left-bar xs */
+  /* left-bar s */
 
   .bar-top {
     padding-top: 20px;
@@ -360,6 +400,11 @@ body {
     border-left: 5px solid greenyellow;
     margin-left: -10px;
     padding-left: 4px;
+  }
+
+  /* media-player s */
+  .inline-switch {
+    display: block;
   }
 }
 
