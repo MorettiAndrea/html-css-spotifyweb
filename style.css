@@ -213,14 +213,24 @@ body {
   padding: 0 20px;
 }
 
+.track-names {
+  max-width: 50%;
+}
+
 .track-info {
   display: flex;
   justify-content: space-between;
   gap: 5px;
+
+  gap: 10px;
 }
 
 .media-player img {
   width: 40px;
+}
+
+.favorite {
+  padding-left: 20px;
 }
 
 /* ##### da 639px a 877px ##### */
