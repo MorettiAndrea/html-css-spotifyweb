@@ -15,7 +15,6 @@
 img {
   max-width: 100%;
   vertical-align: bottom;
-  background-color: blue;
 }
 
 ul {
@@ -51,6 +50,7 @@ ul {
 
 .hide {
   display: none;
+  padding-left: 10px;
 }
 
 /* row-columns */
@@ -124,14 +124,29 @@ body {
   line-height: 40px;
   padding-left: 10px;
   width: 100%;
-
   list-style: none;
-  /* height: 50%; */
+  height: 50%;
   overflow: auto;
 }
 
 .icons {
+  width: 100%;
+  display: inline;
+  text-align: left;
+}
+
+.icons img {
   width: 40px;
+}
+
+.hidden-icon {
+  display: none;
+}
+
+.hidden-list {
+  display: none;
+  text-align: left;
+  padding-left: 10px;
 }
 .bar-top ul li a {
   display: inline;
@@ -149,6 +164,9 @@ body {
   flex-direction: column;
   gap: 10px;
   padding-bottom: 5px;
+}
+.bar-bottom a {
+  color: gray;
 }
 
 /* media-player xs */
@@ -171,6 +189,15 @@ body {
 
   .left-bar {
     width: 600px;
+  }
+
+  .switch-off {
+    display: none;
+  }
+  .left-bar .hidden-icon {
+    display: inline;
+    width: 200px;
+    padding-bottom: 10px;
   }
 }
 
