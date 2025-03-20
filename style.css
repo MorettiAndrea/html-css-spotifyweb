@@ -52,6 +52,10 @@ ul {
   color: white;
 }
 
+.inline-switch {
+  display: inline;
+}
+
 /* row-columns */
 
 .row {
@@ -203,6 +207,20 @@ body {
 .media-player {
   height: var(--media-player-height);
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.track-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.media-player img {
+  width: 40px;
 }
 
 /* ##### da 639px a 877px ##### */
@@ -218,6 +236,10 @@ body {
   /* top-content s */
 
   /* left-bar xs */
+
+  .bar-top {
+    padding-top: 20px;
+  }
 
   .switch-off {
     display: none;
