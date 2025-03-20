@@ -1,6 +1,6 @@
 :root {
   --media-player-height: 90px;
-  --left-bar-width: 100px;
+  --left-bar-width: 70px;
   --call-to-action-height: 90px;
 }
 
@@ -48,9 +48,8 @@ ul {
   overflow: hidden;
 }
 
-.hide {
-  display: none;
-  padding-left: 10px;
+.white {
+  color: white;
 }
 
 /* row-columns */
@@ -78,7 +77,7 @@ ul {
 
 /* fine row-columns */
 
-/* responsive */
+/* #### responsive #### */
 
 /* da 0 a 638px */
 
@@ -95,13 +94,13 @@ body {
 }
 
 .movies-table {
-  width: calc(100vh - var(--left-bar-width));
+  width: calc(100% - var(--left-bar-width));
   overflow: auto;
 }
 
 .call-to-action {
   height: var(--call-to-action-height);
-  background-color: azure;
+  background-color: #080b12;
 }
 .main-content {
   height: calc(100vh - var(--call-to-action-height));
@@ -119,9 +118,16 @@ body {
   color: gray;
 }
 
+.left-bar li:hover {
+  color: white;
+}
+.left-bar li a:hover {
+  color: white;
+}
+
 .bar-top {
   text-align: center;
-  line-height: 40px;
+  line-height: 50px;
   padding-left: 10px;
   width: 100%;
   list-style: none;
@@ -130,13 +136,29 @@ body {
 }
 
 .icons {
-  width: 100%;
-  display: inline;
   text-align: left;
 }
 
 .icons img {
   width: 40px;
+}
+.icon-bottom {
+  display: flex;
+  text-align: center;
+}
+.icon-bottom img {
+  width: 20px;
+}
+
+.user img {
+  width: 30px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.hidden-text {
+  display: none;
+  padding-left: 10px;
 }
 
 .hidden-icon {
@@ -149,6 +171,7 @@ body {
   padding-left: 10px;
 }
 .bar-top ul li a {
+  text-decoration: none;
   display: inline;
   color: gray;
 }
@@ -159,14 +182,20 @@ body {
 }
 
 .bar-bottom {
-  text-align: center;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
   padding-bottom: 5px;
+  padding-left: 30px;
 }
 .bar-bottom a {
+  text-decoration: none;
   color: gray;
+}
+.bar-bottom a:hover {
+  color: white;
 }
 
 /* media-player xs */
@@ -176,20 +205,19 @@ body {
   background-color: #282828;
 }
 
-/* da 639px a 877px */
+/* ##### da 639px a 877px ##### */
 
 @media screen and (min-width: 639px) {
-  .hide {
+  :root {
+    --left-bar-width: 300px;
+  }
+  .hidden-text {
     display: inline;
   }
 
   /* top-content s */
 
   /* left-bar xs */
-
-  .left-bar {
-    width: 600px;
-  }
 
   .switch-off {
     display: none;
@@ -198,6 +226,18 @@ body {
     display: inline;
     width: 200px;
     padding-bottom: 10px;
+  }
+
+  .hidden-icon,
+  .hidden-list {
+    display: block;
+  }
+
+  .home {
+    color: white;
+    border-left: 5px solid greenyellow;
+    margin-left: -10px;
+    padding-left: 4px;
   }
 }
 
