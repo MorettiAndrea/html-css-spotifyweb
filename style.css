@@ -97,8 +97,6 @@ body {
   height: calc(100vh - var(--media-player-height));
 }
 
-/* movie-tables xs */
-
 .movies-table {
   width: calc(100% - var(--left-bar-width));
 }
@@ -169,6 +167,17 @@ body {
   width: 40px;
   background-color: #adff2f;
 }
+
+.recently-played {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+}
+
 /*left-bar xs */
 
 .left-bar {
@@ -444,6 +453,10 @@ body {
 
   /* top-content s */
 
+  .card {
+    width: 150px;
+  }
+
   /* left-bar s */
   .left-bar {
     text-align: center;
@@ -487,6 +500,9 @@ body {
 }
 /* ####da 878px a 1439px#### */
 @media screen and (min-width: 878px) {
+  .card {
+    width: 120px;
+  }
   /* top-content m */
 
   /* left-bar m */
