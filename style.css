@@ -1,6 +1,6 @@
 :root {
   --media-player-height: 90px;
-  --left-bar-width: 130px;
+  --left-bar-width: 50px;
   --call-to-action-height: 90px;
 }
 
@@ -97,11 +97,12 @@ body {
   height: calc(100vh - var(--media-player-height));
 }
 
-/* movie-tales xs */
+/* movie-tables  */
 
-.top-content > button .movies-table {
+.top-content > button {
+}
+.movies-table {
   width: calc(100% - var(--left-bar-width));
-  overflow: auto;
 }
 
 .call-to-action {
@@ -135,6 +136,7 @@ body {
 
 .main-content {
   height: calc(100vh - var(--call-to-action-height));
+  overflow: auto;
 }
 
 /*left-bar xs */
@@ -437,7 +439,6 @@ body {
   .home {
     color: white;
     border-left: 5px solid greenyellow;
-    z-index: 10;
   }
 
   /* media-player s */
