@@ -133,7 +133,7 @@ body {
 }
 
 .main-content {
-  height: calc(100vh - var(--upgrade-height));
+  height: 90%;
   overflow: auto;
 }
 
@@ -169,9 +169,11 @@ body {
 }
 
 .recently-played {
+  width: 90%;
   display: flex;
-  justify-content: space-evenly;
+  gap: 10px;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .card {
@@ -454,7 +456,7 @@ body {
   /* top-content s */
 
   .card {
-    width: 150px;
+    width: 145px;
   }
 
   /* left-bar s */
@@ -520,6 +522,9 @@ body {
 /* #### da 1440px in poi#### */
 
 @media screen and (min-width: 1440px) {
+  .card {
+    /* width: 100px; */
+  }
   /* top-content l */
 
   /* left-bar l */
