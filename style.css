@@ -1,7 +1,7 @@
 :root {
   --media-player-height: 90px;
   --left-bar-width: 50px;
-  --call-to-action-height: 90px;
+  --upgrade-height: 90px;
 }
 
 /* setup generali */
@@ -97,37 +97,37 @@ body {
   height: calc(100vh - var(--media-player-height));
 }
 
-/* movie-tables  */
+/* movie-tables xs */
 
-.top-content > button {
-}
 .movies-table {
   width: calc(100% - var(--left-bar-width));
 }
 
-.call-to-action {
+.upgrade {
   display: flex;
   justify-content: flex-end;
+
   align-items: center;
-  height: var(--call-to-action-height);
+  width: 100%;
+  height: var(--upgrade-height);
   background-color: #080b12;
 }
 
-.call-to-action button:hover {
+.upgrade button:hover {
   width: 330px;
   height: 60%;
 }
 
-.call-to-action button {
+.upgrade button {
   width: 300px;
   height: 50%;
-  margin-right: 10px;
+
   border-radius: 40px;
   border: 1px solid white;
   background-color: #080b12;
 }
 
-.call-to-action button a {
+.upgrade button a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -135,10 +135,40 @@ body {
 }
 
 .main-content {
-  height: calc(100vh - var(--call-to-action-height));
+  height: calc(100vh - var(--upgrade-height));
   overflow: auto;
 }
 
+.call-to-action {
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+  flex-wrap: wrap;
+  line-height: 80px;
+  flex: 1 1 0;
+}
+
+.call-to-action a {
+  color: grey;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.underlined {
+  position: relative;
+}
+
+.yellow-line {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  color: #adff2f;
+  font-size: 1.2rem;
+  font-weight: 900;
+  height: 3px;
+  width: 40px;
+  background-color: #adff2f;
+}
 /*left-bar xs */
 
 .left-bar {
