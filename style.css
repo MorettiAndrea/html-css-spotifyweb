@@ -137,6 +137,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  height: 99%;
 }
 
 .call-to-action {
@@ -538,9 +539,12 @@ body {
     display: block;
   }
 
-  .home {
-    color: white;
+  #home {
     border-left: 5px solid greenyellow;
+  }
+
+  #home a {
+    color: white;
   }
 
   /* media-player s */
