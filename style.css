@@ -150,6 +150,10 @@ body {
   gap: 10px;
 }
 
+.call-to-action :hover {
+  color: white;
+}
+
 .call-to-action a {
   color: grey;
   text-decoration: none;
@@ -182,6 +186,23 @@ body {
 
 .card {
   width: 200px;
+}
+
+.card :hover .inner-play {
+  display: block;
+}
+.card li {
+  position: relative;
+  display: inline-block;
+}
+
+.inner-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  display: none;
 }
 
 .reccomanded {
