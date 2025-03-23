@@ -522,10 +522,13 @@ body {
 /* #### da 1440px in poi#### */
 
 @media screen and (min-width: 1440px) {
-  .card {
-    /* width: 100px; */
-  }
   /* top-content l */
+  .recently-played {
+    justify-content: space-between;
+  }
+  .card {
+    width: 142px;
+  }
 
   /* left-bar l */
 
