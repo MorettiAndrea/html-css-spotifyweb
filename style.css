@@ -523,6 +523,10 @@ body {
 
 @media screen and (min-width: 1440px) {
   /* top-content l */
+  .call-to-action {
+    justify-content: center;
+    gap: 20px;
+  }
   .recently-played {
     justify-content: space-between;
   }
