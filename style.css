@@ -99,9 +99,6 @@ body {
 
 .movies-table {
   width: calc(100% - var(--left-bar-width));
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .upgrade {
@@ -136,6 +133,7 @@ body {
 }
 
 .main-content {
+  height: 90%;
   overflow: auto;
 }
 
@@ -180,10 +178,6 @@ body {
 
 .card {
   width: 200px;
-}
-
-.reccomanded {
-  display: flex;
 }
 
 /*left-bar xs */
@@ -529,10 +523,6 @@ body {
 
 @media screen and (min-width: 1440px) {
   /* top-content l */
-  .call-to-action {
-    justify-content: center;
-    gap: 20px;
-  }
   .recently-played {
     justify-content: space-between;
   }
