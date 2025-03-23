@@ -177,7 +177,7 @@ body {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin: 0 auto;
+  padding-left: 40px;
 }
 
 .card {
@@ -188,6 +188,32 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
+  padding-left: 40px;
+}
+
+.most-popular {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 40px;
+}
+
+.most-popular img {
+  border-radius: 50%;
+}
+
+.main-content * {
+  padding-bottom: 5px;
+}
+
+.main-content p {
+  color: gray;
+  font-size: 0.7rem;
+}
+
+.category-title {
+  padding-left: 40px;
+  padding-bottom: 20px;
 }
 
 /*left-bar xs */
