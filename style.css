@@ -99,12 +99,13 @@ body {
 
 .movies-table {
   width: calc(100% - var(--left-bar-width));
+  display: flex;
+  flex-direction: column;
 }
 
 .upgrade {
   display: flex;
   justify-content: flex-end;
-
   align-items: center;
   width: 100%;
   height: var(--upgrade-height);
@@ -133,7 +134,8 @@ body {
 }
 
 .main-content {
-  height: 90%;
+  display: flex;
+  flex-direction: column;
   overflow: auto;
 }
 
@@ -144,6 +146,8 @@ body {
   flex-wrap: wrap;
   line-height: 80px;
   flex: 1 1 0;
+  font-size: 0.9rem;
+  gap: 10px;
 }
 
 .call-to-action a {
@@ -178,6 +182,12 @@ body {
 
 .card {
   width: 200px;
+}
+
+.reccomanded {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 /*left-bar xs */
