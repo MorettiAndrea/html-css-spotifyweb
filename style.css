@@ -52,10 +52,6 @@ h3 {
   overflow: hidden;
 }
 
-.white {
-  color: white;
-}
-
 .inline-switch {
   display: block;
 }
@@ -111,7 +107,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
   height: var(--upgrade-height);
   background-color: #080b12;
 }
@@ -124,7 +119,6 @@ body {
 .upgrade button {
   width: 300px;
   height: 50%;
-
   border-radius: 40px;
   border: 1px solid white;
   background-color: #080b12;
@@ -146,13 +140,13 @@ body {
 
 .call-to-action {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   color: gray;
   flex-wrap: wrap;
   line-height: 80px;
   flex: 1 1 0;
   font-size: 0.9rem;
-  gap: 10px;
+  gap: 20px;
 }
 
 .call-to-action :hover {
@@ -182,11 +176,10 @@ body {
 }
 
 .recently-played {
-  width: 90%;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  padding-left: 40px;
+  padding: 0 20px;
 }
 
 .card {
@@ -333,7 +326,7 @@ body {
   align-items: flex-start;
   gap: 10px;
   padding-bottom: 5px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .bar-bottom a {
   text-decoration: none;
